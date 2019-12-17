@@ -1,0 +1,157 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Header Section */
+header {
+  height: 4rem;
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.flex-container div {
+  display: flex;
+}
+
+header span {
+    color: #cacfd4;
+}
+
+nav {
+  padding: 0.5rem;
+  text-align: right;
+}
+
+nav a {
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+/*Main Section*/
+.main {
+  padding-top: 4rem;
+}
+
+/*First Section */
+.first {
+  background-color: #cacfd4;
+  display: flex;
+  align-items: center;
+}
+
+.first img {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+
+.button {
+  padding: 0.5rem 2rem;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  background: black;
+}
+
+
+/*Second Section*/
+.second {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  width: 60%;
+  padding-left: 0.65rem;
+}
+
+.left img {
+  width: 90%;
+  margin: 32px 24px;
+}
+.left p {
+  width: 70%;
+}
+
+.right img {
+  width: 35%;
+}
+
+
+.one {
+  font-weight: bold;
+}
+
+.two {
+  font-size: 0.80rem;
+  color: #616d6d;
+}
+
+/*Third Section*/
+.third {
+  background-color: #cacfd4;
+}
+.third h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  width: 25%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.course img {
+  width:100%;
+}
+
+.course h2 {
+  padding-left: 1rem;
+}
+
+.course h4,
+.course p {
+  padding-left: 1rem;
+  font-weight: 200;
+  color: #616d6d;
+}
+
+/*Fourth Section*/
+.fourth {
+  display: flex;
+  align-items: center;
+}
+
+.left video {
+  width: 90%;
+  margin: 32px 24px;
+}
+
+/*Footer*/
+footer {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-top: 1px solid black;
+}
+
+.copyright {
+  text-align: left;
+}
