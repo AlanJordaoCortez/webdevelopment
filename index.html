@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./resources/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>MadProps</title>
+        
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <h1>Know all about every property in Madison Downtown</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#places">Apartments</a></li>
+                    <li><a href="#About">Who we are</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <input type="text" placeholder="Find the perfect place">
+            <button class="search-btn" onclick="alertShit()"><i class="fa fa-search"></i></button>
+        </div>
+        <!--first intro-->
+        <div class="container" id="first">
+            <figure>
+                <img src="https://s3.amazonaws.com/rcp-prod-uploads/property_images/slider_images/2017-01/UW-Apartment-Building-172225.jpg" alt="">
+                <figcaption>Grand Central Building</figcaption>
+            </figure>
+            <p class="about">
+    MadProps helps you to find the apartment that fits you.<br>
+    From more premium locations and buildings to simpler options.
+    </p>
+    
+        </div>
+        <!--second intro-->
+        <div class="container" id="second">
+            <p class="about">With more than 70 properties registered you have more than enough options to make the best decision.<br>
+                <b>Start rearching now!</b></p>
+            <figure>
+                <img src="https://s3.amazonaws.com/rcp-prod-uploads/property_images/slider_images/2017-01/UW-Apartment-Building-171716.PNG" alt="">
+                <figcaption>Another Place</figcaption>
+            </figure>
+        </div>
+
+        <!--Form-->
+        <div class="form">
+            <form action="./form.txt" method="POST">
+                <h2>Find the perfect place for you!</h2>
+                
+                <label for="street">In what street would you like to live in?</label>
+                <input list="streets" name="street" id="street">
+                <datalist id="streets">
+                    <option value="Langton">Langton St</option>
+                    <option value="University">University Av</option>
+                    <option value="Johnson">W Johnson St</option>
+                </datalist>
+                
+                <br>
+                <label for="max-price">How much are you willing to pay for rent?</label>
+                <input type="number" name="max-price" value="1200" id="max-price" step="10">
+
+                <br>
+                <label for="size">How much big is the place you looking for(in square ft)?</label>
+                <input type="number" name="size" value="100" id="size" step="10" min="10" max="5000">
+                
+                <br>
+                <label for="closeness">How close do you want to live to campus(Bascom Hill)?</label>
+                <span>Not that close</span>
+                <input type="range" name="closeness" id="closeness" step="0.2" min="0" max="3">
+                <span>Really close</span>
+
+                <br>
+                <p>How many people are you living with?</p>
+                <input type="radio" name="roommates" value="1" id="one" required>
+                <label for="one">1</label>           
+
+                <input type="radio" name="roommates" value="2" id="two">
+                <label for="two">2</label>
+
+                <input type="radio" name="roommates" value="3" id="three">
+                <label for="three">3</label>
+                <br>
+
+                <label for="username">Create a Username:</label>
+                <input type="text" name="username" id="username" placeholder="@Example17" minlength="5" maxlength="15" pattern="[a-zA-Z0-9]+">
+
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <p>Author: Alan Cortez</p>
+            <p><a href="alanjordaocortez@gmail.com">alanjordaocortez@gmail.com</a></p>
+
+        </div>
+    </body>
+    <script src="./resources/main.js"></script>
+</html>

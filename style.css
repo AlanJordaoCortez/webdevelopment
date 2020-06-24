@@ -1,0 +1,57 @@
+html {
+    background-color: #fdf4d8;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+figure img {
+    width: 100%;
+    margin: 1rem auto;
+}
+figcaption {
+    font-size: 0.5rem;
+}
+input {
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 1.5rem;
+    padding: 2px 2px;
+}
+.search-btn {
+    background-color: #fdf4d8;
+    border: #fdf4d8;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+/*.container img {
+    width: 55%;
+    margin: 1rem auto;
+}*/
+#first {
+    background-color: #f1eec9;
+}
+#second {
+    background-color: #f7e6b5;
+}
+#second figure {
+    width: 55%;
+}
+.about {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding-left: 1.8rem;
+}
+
+#left {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    width: 45%  
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #d77d52;
+    color: white;
+    padding: 0.5rem;
+  }
